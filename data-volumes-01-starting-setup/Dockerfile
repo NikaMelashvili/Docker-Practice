@@ -12,4 +12,7 @@ COPY . .
 
 EXPOSE 80
 
+# volumes help manage data
+VOLUME [ "/app/feedback" ]
+
 CMD [ "node", "server.js" ]
